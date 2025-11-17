@@ -1,0 +1,18 @@
+How to run the program step by step:
+
+1. Load all related files into the same MATLAB workspace (MATLAB online is recommended, as the scripts use external libraries which may lead to the program not running properly if not installed. https://matlab.mathworks.com/)
+2. Open all SIMULINK models (this creates the necessary variables in the workspace for the SIMULINK models to be run by the script, instead of manual running)
+3. Run "Path_finding.m" (this may take several minutes, the script is broken up into sections for debugging's sake, and so that the whole script doesn't need to be run again in case of minor modifications)
+4. Optional: run "plot_debug.m".
+
+Outputs:
+3D plot of the occupancy map with the planned paths visualized
+Index-based error calculation (via Command Window)
+3D plot of the index-based error calculation of a selected path (changing the contents of the variables declared in lines 252, 253 will change the path visualized)
+Scalar result of the Hausdorff distance calculation (via Command Window)
+3D plot of the points compared during Hausdorff distance calculation
+Scalar result of the Discrete Fréchet distance calculation (via Command Window)
+3D plot of the points compared during Discrete Fréchet distance calculation
+Scalar results of the Nearest-Neighbour distance calculation (via Command Window)
+3D plot of the points compared during the Nearest-Neighbour distance calculation
+Table of the MSE, RMSE and MaxDev of all algorithms
